@@ -44,6 +44,11 @@ a {
     color: #fff;
 }
 
+.heading {
+    font-weight: 700;
+    color: #0d1111;
+}
+
 .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 1);
@@ -125,6 +130,7 @@ a {
 /* ========================== Hero ========================== */
 .hero {
     margin-top: 50px;
+    padding-bottom: 79px;
 }
 
 .hero .body {
@@ -441,8 +447,8 @@ a {
 }
 
 /* ========================== Courses ========================== */
-.courses .main-content {
-    margin-top: 130px;
+.courses {
+    margin-top: 65px;
 }
 
 .courses .sub-title {
@@ -510,7 +516,7 @@ a {
     padding: 18px 25px 29px;
     margin-left: 17px;    
     border-radius: 8px;
-    background-color: #fff;
+    background-color: orange;
 }
 
 .courses .info:hover {
@@ -573,7 +579,7 @@ a {
 
 /* ========================== Numbers ========================== */
 .numbers {
-    padding: 132.5px 0;
+    padding: 195px 154px 0;
 }
 
 .numbers .numbers-container {
@@ -731,7 +737,45 @@ a {
     right: 32px;
 }
 
+/* ========================== CTA ========================== */
+.action-call {
+    margin-top: 100px;
+    padding-top: 30px;
+    background-color: #DEF6F5;
+}
 
+.action-call .body {
+    display: flex;
+    align-items: center;
+    padding: 76px 0 88px;
+}
 
+.action-call .get-admit {
+    width: 420px;
+}
 
+.action-call .get-heading {
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #070707;
+}
+
+.action-call .get-admit .desc {
+    margin-top: 18px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #767E7E;
+}
+
+.action-call .get-btn {
+    width: 186px;
+    font-size: 1.8rem;
+    margin-left: 410px;
+}
+
+.action-call .get-btn:hover {
+    opacity: 0.8;
+}
 
