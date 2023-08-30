@@ -779,3 +779,74 @@ a {
     opacity: 0.8;
 }
 
+/* ========================== Footer ========================== */
+.footer {
+    padding: 131px 0 30px;
+}
+
+.footer .body-footer {
+    display: flex;
+}
+
+.footer .foot-logo {
+    margin-right: 144px;
+}
+
+.footer .footer-columns {
+    display: flex;
+    white-space: nowrap;
+    gap: 144px;
+}
+
+.footer .column-item:last-of-type {
+    width: 113px;
+}
+
+.footer .column-item .title {
+    padding-bottom: 8px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #2E2E2E;
+}
+
+.footer .column-item .title:last-of-type {
+    padding-bottom: 0;
+}
+
+.footer .column-item li a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #535353;
+}
+
+.footer .column-item li a:hover {
+    opacity: 0.8;
+}
+
+.footer .column-item li {
+    margin-top: 18px;
+}
+
+.footer .column-item .social {
+    margin-right: 9px;
+    margin-left: -4px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.copyright {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.copyright .desc {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #B0B5B4;
+}
+
