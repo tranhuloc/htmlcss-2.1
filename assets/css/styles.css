@@ -52,6 +52,11 @@ a {
 }
 
 /* ========================== Header ========================== */
+.header {
+    background-color: #fff;
+    padding-top: 5px;
+}
+
 .header.fixed {
     position: sticky;
     top: -28px;
@@ -74,6 +79,12 @@ a {
     color: #494949;
 }
 
+.header .action-link:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+
 .header .nav {
     margin-left: auto;
 }
@@ -92,10 +103,10 @@ a {
 }
 
 .nav li a:hover,
-.nav li.active,
-.header .action-link:hover {
+.nav li.active {
     text-shadow: 1px 0 0 currentColor;
     color: #2F3A3B;
+    transition: 0.5s;
 }
 
 .header .action-btn {
@@ -106,7 +117,9 @@ a {
 }
 
 .header .action-btn:hover {
-    opacity: 0.8;
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: 1s;
 }
 
 /* ========================== Hero ========================== */
@@ -147,10 +160,41 @@ a {
     color: #9DA6A5;
 }
 
+.hero .hero-cta-block {
+    margin-top: 56px;
+    display: flex;
+    gap: 50px;
+}
+
 .hero .hero-btn {
     margin-top: 52px;
     min-width: 186px;
     font-size: 1.8rem;
+}
+
+.hero .hero-btn:hover {
+    opacity: 0.8;
+}
+
+.hero .play-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+    background: #ffffff;
+    box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.05);
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.hero .play-block:hover {
+    transform: scale(0.9);
+    transition: 0.5s;
+    opacity: 0.8;
 }
 
 .hero .media-block {
@@ -395,8 +439,8 @@ a {
 }
 
 /* ========================== Courses ========================== */
-.courses {
-    padding: 65px 0 61.5px 0;
+.courses .main-content {
+    margin-top: 130px;
 }
 
 .courses .sub-title {
@@ -445,11 +489,11 @@ a {
     gap: 47px;
 }
 
-.courses .course-item {
-    position: relative;
+.course-item:hover {
+    cursor: pointer;
 }
 
-.courses img.image {
+.courses .image {
     width: 359px;
     height: 393px;
     border-radius: 8px;
@@ -461,15 +505,17 @@ a {
     position: relative;
     top: -71px;
     width: 325px;
-    height: 195px;
     padding: 18px 25px 29px;
     margin-left: 17px;    
     border-radius: 8px;
-    box-shadow: 0px 16px 90px 0px #0000000D;
-    background-color: #FFFFFF;
+    background-color: #fff;
 }
 
-.course-item .name-course {
+.courses .info:hover {
+    box-shadow: 0px 16px 90px 0px #0000000D;
+}
+
+.course-item .name-course a {
     font-size: 2.2rem;
     font-weight: 700;
     line-height: 1.5;
@@ -498,6 +544,7 @@ a {
 }
 
 .course-item .limit {
+    margin-top: 18px;
     display: flex;
     gap: 10px;
 }
@@ -513,7 +560,6 @@ a {
 .course-item .quantity::before {
     position: relative;
     top: -2px;
-    margin-top: 18px;
     content: "";
     display: inline-block;
     width: 6px;
@@ -521,4 +567,38 @@ a {
     margin-right: 10px;
     border-radius: 50%;
     background-color: #1EBFC1;
+}
+
+/* ========================== Numbers ========================== */
+.numbers {
+    padding: 132.5px 0;
+}
+
+.numbers .numbers-container {
+    width: 862px;
+}
+
+.numbers .body {
+    display: flex;
+    gap: 200px;
+}
+
+.number-span,
+.number-label {
+    display: block;
+    text-align: center;
+}
+
+.number-span {
+    font-size: 6.2rem;
+    font-weight: 700;
+    color: #0D1111;
+}
+
+.number-label {
+    margin-top: 11px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #767E7E;
 }
