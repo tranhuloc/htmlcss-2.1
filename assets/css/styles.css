@@ -59,19 +59,19 @@ a {
 /* ========================== Header ========================== */
 .header {
     background-color: #fff;
-    padding: 5px 0;
+    padding-top: 40px;
 }
 
 .header.fixed {
     position: sticky;
-    top: -43px;
+    top: -40px;
     z-index: 1;
 }
 
 .header .body {
     display: flex;
     align-items: center;
-    padding: 52px 0 8px;
+    padding: 9px 0;
 }
 
 .header .action-link {
@@ -130,7 +130,7 @@ a {
 /* ========================== Hero ========================== */
 .hero {
     margin-top: 50px;
-    padding-bottom: 79px;
+    /* padding-bottom: 79px; */
 }
 
 .hero .body {
@@ -358,7 +358,8 @@ a {
 
 /* ========================== Features ========================== */
 .features {
-    padding: 130px 0 65px;
+    padding-top: 65px;
+    margin-top: 65px;
 }
 
 .features .main-features {
@@ -449,6 +450,7 @@ a {
 /* ========================== Courses ========================== */
 .courses {
     margin-top: 65px;
+    padding-top: 65px;
 }
 
 .courses .sub-title {
@@ -516,7 +518,7 @@ a {
     padding: 18px 25px 29px;
     margin-left: 17px;    
     border-radius: 8px;
-    background-color: orange;
+    background-color: #fff;
 }
 
 .courses .info:hover {
@@ -579,7 +581,7 @@ a {
 
 /* ========================== Numbers ========================== */
 .numbers {
-    padding: 195px 154px 0;
+    padding: 265px 154px 0;
 }
 
 .numbers .numbers-container {
@@ -739,8 +741,8 @@ a {
 
 /* ========================== CTA ========================== */
 .action-call {
-    margin-top: 100px;
-    padding-top: 30px;
+    margin-top: 130px;
+    padding: 76px 0 80px;
     background-color: #DEF6F5;
 }
 
@@ -781,7 +783,7 @@ a {
 
 /* ========================== Footer ========================== */
 .footer {
-    padding: 131px 0 30px;
+    padding: 151px 0 30px;
 }
 
 .footer .body-footer {
